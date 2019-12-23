@@ -41,15 +41,15 @@ int main()
     //transform Adjacency list to Adjacency matrix
     for (int i = 0; i < E; i++)
     {
-        A_matrix[input_A_list[i][0] - 1][input_A_list[i][1] - 1] = 1;
-        A_matrix[input_A_list[i][1] - 1][input_A_list[i][0] - 1] = 1;
+        A_matrix[input_A_list[i][0]][input_A_list[i][1]] = 1;
+        A_matrix[input_A_list[i][1]][input_A_list[i][0]] = 1;
     }
 
     cout << "It works! Let handle for given Input:\n";
     cout << N << ": number of Nodes,\n";
     cout << E << ": number of Edges,\n";
     cout << "0 1 0 2 0 3 2 4"
-         << ": given Adjacency list.\n";
+         << ": given Adjacency list.\n" << "and as result (symetric) Adjacency Matrix below:";
 
     //Let print Adjacency Matrix
     cout << endl;
